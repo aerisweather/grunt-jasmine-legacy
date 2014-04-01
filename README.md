@@ -30,7 +30,7 @@ The grunt-jasmine-legacy task:
 
 * Uses a [template](src/templates/specrunner.html.tmpl) to create an AMD spec runner
 * Executes the spec runner using [`PhantomJS`](http://phantomjs.org/)
-* Reports the results using the [`PhantomJSReporter`](src/helpers/phantomjsreporter.js), which listens to events emitted by [grunt-lib-phantomjs](https://github.com/gruntjs/grunt-lib-phantomjs), and outputs test results to the console.
+* Reports the results using the `PhantomJSReporter`, which listens to events emitted by [grunt-lib-phantomjs](https://github.com/gruntjs/grunt-lib-phantomjs), and outputs test results to the console.
 * Saves the spec runner HTML file for further debugging, if needed (using the standard `jasmine.HTMLReporter`)
 
 
