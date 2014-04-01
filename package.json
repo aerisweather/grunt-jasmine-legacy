@@ -1,6 +1,6 @@
 {
   "name": "grunt-jasmine-legacy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Grunt task for running Jasmine v1.3 tests using RequireJS and PhantomJS",
   "main": "src/grunt-jasmine-legacy",
   "scripts": {
