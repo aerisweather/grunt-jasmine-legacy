@@ -1,3 +1,7 @@
+## 1.0.5
+
+* Update grunt-lib-phantomjs version to 0.6.0
+
 ## 1.0.4
 
 * Handle PhantomJS spawn errors
