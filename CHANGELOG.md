@@ -1,3 +1,7 @@
+## 1.0.4
+
+* Handle PhantomJS spawn errors
+
 ## 1.0.3
 
 * Change Function.prototype.bind polyfill for PhantomJS
