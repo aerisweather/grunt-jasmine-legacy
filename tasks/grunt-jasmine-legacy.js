@@ -16,7 +16,8 @@ module.exports = function(grunt) {
       amdConfig: {},
       amdConfigModules: [],
       preserveSpecRunner: true,
-      outDir: 'tests'
+      outDir: 'tests',
+      timeout: 5000
     });
     var target = this.target;
     var tempFiles = [];
@@ -49,7 +50,9 @@ module.exports = function(grunt) {
     }
 
     function run() {
-      return phantomJSSpecRunner.run(specRunnerPath);
+      return phantomJSSpecRunner.run(specRunnerPath, {
+        timeout: options.timeout
+      });
     }
 
     function tearDown() {

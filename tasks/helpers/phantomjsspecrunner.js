@@ -6,8 +6,11 @@ module.exports = {
     var _ = require('underscore');
 
     var phantomJSSpecRunner = {
-      run: function(url) {
+      run: function(url, opt_options) {
         var promiseToRunSpecsDeferred = when.defer();
+        var options = _.defaults(opt_options || {}, {
+          timeout: 5000
+        });
 
         bindPhantomEvents({
           'fail.load': function(url) {
@@ -29,7 +32,7 @@ module.exports = {
           }
         });
 
-        runPhantomJS(url);
+        runPhantomJS(url, options);
 
         return promiseToRunSpecsDeferred.promise;
 
@@ -42,10 +45,11 @@ module.exports = {
           });
         }
 
-        function runPhantomJS(url) {
+        function runPhantomJS(url, options) {
+          console.warn('TIMEOUT: ' + options.timeout);
           phantomjs.spawn(url, {
             options: {
-              timeout: 3000
+              timeout: options.timeout
             },
             done: function(err) {
               // Handle errors in spawning PhantomJS
