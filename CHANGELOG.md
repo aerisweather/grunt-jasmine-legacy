@@ -1,3 +1,7 @@
+## 1.2.2
+
+* Lock down phantomjs version
+
 ## 1.2.1
 
 * Remove a console.warn message leftover from debugging
