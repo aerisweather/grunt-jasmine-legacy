@@ -74,7 +74,10 @@ The grunt-jasmine-legacy task:
       // Files to not be included as test specs
       exclude: [
         'tests/fixtures/**/*.js'
-      ]
+      ],
+
+      // PhantomJS timeout (ms). Default is 3000
+      timeout: 10000
     }
   },
 }
