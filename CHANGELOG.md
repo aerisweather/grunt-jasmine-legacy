@@ -1,3 +1,7 @@
+## 1.2.1
+
+* Remove a console.warn message leftover from debugging
+
 ## 1.2.0
 
 * Support `timeout` option
