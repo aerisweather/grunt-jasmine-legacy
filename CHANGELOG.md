@@ -1,3 +1,7 @@
+## 1.2.0
+
+* Support `timeout` option
+
 ## 1.1.0
 
 * Output spec description when using `--verbose` flag
