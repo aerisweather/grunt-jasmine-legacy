@@ -46,7 +46,6 @@ module.exports = {
         }
 
         function runPhantomJS(url, options) {
-          console.warn('TIMEOUT: ' + options.timeout);
           phantomjs.spawn(url, {
             options: {
               timeout: options.timeout
