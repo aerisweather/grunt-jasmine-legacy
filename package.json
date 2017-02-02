@@ -31,10 +31,9 @@
   },
   "homepage": "https://github.com/hamweather/grunt-jasmine-legacy",
   "dependencies": {
-    "grunt": "~0.4.3",
-    "phantomjs": "^2.1.1",
-    "grunt-lib-phantomjs": "0.6.0",
     "chalk": "~0.4.0",
+    "grunt": "~0.4.3",
+    "grunt-lib-phantomjs": "^1.1.0",
     "underscore": "~1.6.0",
     "when": "~2.8.0"
   }
