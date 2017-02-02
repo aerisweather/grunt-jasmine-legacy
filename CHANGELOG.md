@@ -1,3 +1,7 @@
+# 1.2.4
+
+* Upgrade grunt-lib-phantomjs
+
 ## 1.2.3
 
 * Upgrade phantomjs to v2.1.1
